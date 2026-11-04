@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="平和界世·坐一会，一个安静休息、记录今日心情的小地方。">
+  <title>平和界世·坐一会</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="平和界世首页"><span aria-hidden="true">✳</span> 平和界世</a>
+    <span class="header-note">给自己，一小片安静</span>
+  </header>
+
+  <main id="home">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow">森林深处，有个位置留给你</p>
+        <h1 id="page-title">平和界世</h1>
+        <p class="subtitle">让悲伤有地方住，<br>把更多的土地留给生活</p>
+        <p class="intro">风经过树林，河水慢慢流。<br>今天也可以什么都不赶，先坐一会。</p>
+        <button class="primary-button" id="sit-button" type="button" aria-expanded="false" aria-controls="welcome">坐一会 <span aria-hidden="true">↗</span></button>
+        <div id="welcome" class="welcome" role="status" hidden>
+          <p>你可以在这里休息一会。不需要证明什么，也不需要急着变好。</p>
+        </div>
+        <p class="small-note">不必准备好，来到这里就好。</p>
+      </div>
+
+      <div class="landscape" role="img" aria-label="温暖的阳光落在森林与木屋上，一条河流静静穿过草地。">
+        <div class="sun"></div>
+        <div class="distant-hill"></div>
+        <div class="hill"></div>
+        <div class="river"></div>
+        <div class="tree tree-one"></div><div class="tree tree-two"></div>
+        <div class="tree tree-three"></div><div class="tree tree-four"></div>
+        <div class="cabin"><div class="roof"></div><div class="window"></div><div class="door"></div></div>
+        <div class="foreground"></div>
+        <div class="scene-caption"><span aria-hidden="true">☀</span> 光会慢慢照进来</div>
+      </div>
+    </section>
+
+    <section class="mood-section" aria-labelledby="mood-title">
+      <div class="mood-heading">
+        <p class="eyebrow">留下一点今天</p>
+        <h2 id="mood-title">今日心情</h2>
+        <p>晴天、阴天，或是说不清的天气，<br>都可以写在这里。</p>
+        <span class="leaf-mark" aria-hidden="true">❧</span>
+      </div>
+      <form id="mood-form" class="mood-form">
+        <label for="mood">此刻，你的心里是什么天气？</label>
+        <textarea id="mood" name="mood" rows="5" maxlength="5000" placeholder="今天的我……"></textarea>
+        <div class="form-bottom">
+          <p class="privacy-note" id="privacy-note">仅保存在当前浏览器，不上传服务器。<br>清除浏览器数据后，记录也会消失。</p>
+          <button class="save-button" type="submit">保存心情 <span aria-hidden="true">＋</span></button>
+        </div>
+        <p id="save-status" class="save-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+    <p class="closing">愿你在自己的节奏里，慢慢生长。</p>
+  </main>
+  <footer><span>平和界世 · 坐一会</span><span>一处小小的停靠，也是一种出发。</span></footer>
+</body>
+</html>
